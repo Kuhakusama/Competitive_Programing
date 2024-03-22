@@ -3,6 +3,13 @@
 #include <unordered_set>
 using namespace std;
 
+//Logica
+/*
+Usando da matematica basica temos que se a1 + a2 = S, então, a2[x] = S - a1(arr[i]).
+Achando o valor de x, iremos procuara a existencia desse valor no array/vector, se acharmos esse valor a função retorna um vector<int> result{x,arr[i};
+se nçao retorna uma vazio.
+*/
+
 vector<int> somaPar(vector<int> arr, int Sum) {
     unordered_set<int> s;
     vector<int> result;
